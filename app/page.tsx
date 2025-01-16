@@ -1,8 +1,3 @@
-import { BlogPosts } from "app/components/posts";
-const research_int = " ";
-
-const intro = "I'm a quant";
-
 const academic_bg =
   "I received B.S. and M.Eng in Computer Science from Cornell University, where I was fortunate to be advised by Lorenzo Alvisi and Sainyam Galhotra";
 
