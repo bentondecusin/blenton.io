@@ -7,7 +7,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { baseUrl } from "./sitemap";
-
+import { Zen_Maru_Gothic } from "next/font/google";
+const cn_zh_font = Zen_Maru_Gothic({ weight: "300", subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
@@ -54,10 +55,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/static/logo.png" sizes="any" />
       </head>
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased  max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
-          {children}
+          {/* <Navbar /> */}
+          <div className="prose"> {children}</div>
           <Footer />
           <Analytics />
           <SpeedInsights />
